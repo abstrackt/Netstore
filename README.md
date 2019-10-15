@@ -2,11 +2,11 @@
 
 Aby korzystać z Netstore należy skompilować pliki źródłowe za pomocą dostarczonego makefile, po czym aktywować węzeł serwerowy za pomocą polecenia
 
-./netstore-server --addr {adres} --file {folder wyjściowy} --port {numer portu} (oraz opcjonalnie) --buff {rozmiar bufora węzła} --time {czas oczekiwania na odpowiedź} 
+    ./netstore-server --addr {adres} --file {folder wyjściowy} --port {numer portu} (oraz opcjonalnie) --buff {rozmiar bufora węzła} --time {czas oczekiwania na odpowiedź} 
 
 Następnie węzeł kliencki uruchamiamy poleceniem
 
-./netstore-client --addr {adres} --out {folder wyjściowy} --port {numer portu} --time {czas oczekiwania na odpowiedź}
+    ./netstore-client --addr {adres} --out {folder wyjściowy} --port {numer portu} --time {czas oczekiwania na odpowiedź}
 
 ## Wprowadzenie
 
