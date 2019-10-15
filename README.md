@@ -1,3 +1,13 @@
+## Krótka instrukcja użycia
+
+Aby korzystać z Netstore należy skompilować pliki źródłowe za pomocą dostarczonego makefile, po czym aktywować węzeł serwerowy za pomocą polecenia
+
+./netstore-server --addr {adres} --file {folder wyjściowy} --port {numer portu} (oraz opcjonalnie) --buff {rozmiar bufora węzła} --time {czas oczekiwania na odpowiedź} 
+
+Następnie węzeł kliencki uruchamiamy poleceniem
+
+./netstore-client --addr {adres} --out {folder wyjściowy} --port {numer portu} --time {czas oczekiwania na odpowiedź}
+
 ## Wprowadzenie
 
 Zadanie polega na napisaniu sieciowej aplikacji rozproszonego przechowywania plików. Aplikacja składa się z węzłów serwerowych [zwanych w treści zadania także wymiennie serwerami] i węzłów klienckich [zwanych w treści zadania także wymiennie klientami]. Węzły serwerowe i klienckie komunikują się między sobą poprzez sieć zgodnie ze zdefiniowanym dalej protokołem. Węzły współpracują ze sobą, tworząc grupę węzłów. Grupa może składać się z dowolnej liczby węzłów. Węzły mogą dynamicznie dołączać do grupy lub odłączać się od grupy. Każdy węzeł udostępnia ten sam zestaw funkcjonalności danego typu (serwerowy lub kliencki) i wszystkie węzły dowolnego typu są sobie równe pod względem praw, priorytetów i możliwości w utworzonej grupie węzłów. Węzły klienckie dostarczają interfejs użytkownika pozwalający przede wszystkim na wysyłanie nowych plików do przechowywania w grupie, usuwanie ich lub pobieranie i poszukiwanie plików przechowywanych w grupie. Węzły serwerowe natomiast mają za zadanie przechowywać pliki.
